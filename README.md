@@ -1,4 +1,4 @@
-# Squawker and Tweeter Driver Modification for the Philips 22RH544/50R MFB speaker
+# Squawker and Tweeter Driver Modification for the Philips 22RH544/50R+ MFB speaker
 
 This repository contains design information of 3D printable adapter parts to replace the original mid+high drivers from the Philips 22RH544 MFB speaker with Visaton drivers.
 
@@ -17,12 +17,12 @@ The following driver substitutes were selected because of the attractive price, 
 
 This work is pending. A report about the test results and recommendations for modifications of the electronics is under construction. The optimal audio performance has not been reached yet...
 
-## Designs for printable parts
+## Design for printable parts
 
 # ![new G50FFL baffle](figures/G50FFL_baffle_v1.png  "new G50FFL baffle_v1")
 
 Attempt | openSCAD files | Remarks
-------- | ----- | -------
+------- | -------------- | -------
 1. | G50FFL_spacer_v1.scad G20SC_spacer_v1.scad | Mid driver sticks out above the baffle causing(?) dip in the frequency reponse (~1.8kHz). Tweeter adapter does not need extra fixation holes to be drilled through the brackets.  Dust cover can not be replaced. For the tweeter plate, M4 hex-nuts can be pressed into the cut-outs (print with support).
 2. | G50FFL_baffle_v1.scad G20SC_spacer_v2.scad | New baffle design for the G50FFL. The dome is lowered down to the original dome position of the AD0211. The extra gasket from the G50FFL package must be used between the driver and the baffle/horn. The original G50FFL flange must be removed. The tweeter is lowered down too and mounted with a 2mm spacer ring to leave enough room for large woofer excursions. Fixation holes must be drilled in the brackets for mounting. Dust covers can be replaced. Slight frequency response problems around the mid/high crossover frequency.
 Bonus | 544_capstand.scad | Capacitor mount, see pictures below. 
@@ -33,8 +33,9 @@ BEFORE | AFTER
  ![before](figures/capfixation_small.jpg  "Capacitor fixation") | ![Modified](figures/capstand_small.jpg  "Capacitor stand")
  
  Recommended capacitors:
-* 4700 μF/63V, Vishay BCcomponents 058/059 PLL-SI, radial snap in 35 mm. Conrad article #446251
-* 680 μF/40V, Panasonic EEU-FR1J681L, radial 12.5 mm. Conrad article #1476134
+ 
+* 4700 μF/63V, Vishay BCcomponents, 058/059 PLL-SI series aluminium capacitors, radial snap in 35 mm. Conrad article #446251
+* 680 μF/40V, Panasonic EEU-FR1J681L series, radial 12.5 mm. Conrad article #1476134
 
 
 [1]: https://www.visaton.de/en/products/dome-midranges/g-50-ffl-8-ohm
