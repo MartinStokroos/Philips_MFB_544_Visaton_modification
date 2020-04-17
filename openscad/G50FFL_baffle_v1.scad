@@ -1,21 +1,23 @@
-// Quick-and-dirty sketch for a new plastic baffle for the Visaton G50FFL which meets the properties of the AD0211 Squawker. 
+// Quick-and-dirty design sketch for a new plastic baffle for the Visaton G50FFL, which meets the formfactor of the AD0211 Squawker.
+// Revision 1.1
 
 do = 134.0; // diameter AD0211
-di = 110; //106.0;
+di = 110; //cutout cabinet
 thickness = 5.0; //ring
 
 mnt_rad = 126/2;
-depth = -12.0; //driver depth behind baffle
+depth = -12.0; //depth of the driver behind the baffle
 
 d_screw1 = 4.0;
 d_head1 = 7.1;
 
 d_dome_bot = 66.67;
-d_dome_top = 53.0;
+d_dome_top = 54.0; //53.0 in rev. 1.0
 d_screw2 = 4.8;
-d_head2 = 7.6;
+d_head2 = 9.2; //7.6 with rev. 1.0, now larger for using washer.
 
-r_sphere = 122;
+h_dome = 3.9; //3.8 with rev. 1.0, space between suspension and rim.
+r_sphere = 123; //122 with rev. 1.0
 sphere_offs = r_sphere-10.0;
 
 difference() {
@@ -37,8 +39,8 @@ difference() {
     
     // dome cut out
     cylinder(d=d_dome_top, h=30, center=true,$fn=200);
-    translate([0, 0, -10+depth+3.8]) cylinder(d=d_dome_bot, h=10, center=false,$fn=200);
-    translate([0, 0, sphere_offs]) sphere(r_sphere, $fn=200);
+    translate([0, 0, -10+depth+h_dome]) cylinder(d=d_dome_bot, h=10, center=false,$fn=200);
+    translate([0, 0, sphere_offs]) sphere(r_sphere, $fn=300);
     
     //G 50 FFL holes
     translate([40, 0, 0]) cylinder(d=d_screw2, h=30.0, center=true,$fn=200);

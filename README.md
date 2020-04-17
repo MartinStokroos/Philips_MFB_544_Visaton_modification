@@ -1,12 +1,12 @@
-# Squawker and Tweeter Driver Modification for the Philips 22RH544/50R+ MFB speaker
+# Squawker and Tweeter Driver Modification for the Philips 544 MFB speaker
 
 This repository contains design information of 3D printable adapter parts to replace the original mid+high drivers from the Philips 22RH544 MFB speaker with Visaton drivers.
 
-ORIGINAL | MODIFIED
--------- | --------
-![Philips 22RH544](figures/544_original_small.jpg  "Philips 22RH544") | ![Modified 22RH544](figures/544_modified_small.jpg  "Modified 22RH544")
+ORIGINAL 544 | MODIFIED 544 | BEST COMPROMISE
+------------ | ------------ | ---------------
+![Philips 22RH544](figures/544_original_small.jpg  "Philips 22RH544") | ![Modified 544](figures/544_modified_small.jpg  "Modified 544") | ![Best compromise 544](figures/544_best_compromise_small.jpg  "Best compromise 544")
 
-The following driver substitutes were selected because of the attractive price, quality and formfactor, which comes the closest to the original drivers:
+The following driver substitutes were selected because of their attractive price, quality and form-factor, which comes the closest to the original drivers:
 
 * Squawker AD0211/SQ8 -> Visaton G 50 FFL dome midrange [1]
 * Tweeter AD0163/TE8 -> Visaton G 20 SC dome tweeter [2].
@@ -16,6 +16,7 @@ The following driver substitutes were selected because of the attractive price, 
 - Overall improvement of the sound quality of the mid+high frequencies. 
 
 This work is pending. A report about the test results and recommendations for modifications of the electronics is under construction. The optimal audio performance has not been reached yet...
+So far attempt #3 is the most promissing. The sound is not unpleasant at all! Modifications in the electronics are not needed. Using a L-pad to attenuate the mid+high range with 1 or 2 dB could be an option. It is a matter of taste. 
 
 ## Design for printable parts
 
@@ -23,8 +24,9 @@ This work is pending. A report about the test results and recommendations for mo
 
 Attempt | openSCAD files | Remarks
 ------- | -------------- | -------
-1 | G50FFL_spacer_v1.scad G20SC_spacer_v1.scad | Mid driver sticks out above the baffle causing(?) dip in the frequency reponse (~1.8kHz). Tweeter adapter does not need extra fixation holes to be drilled through the brackets. The dust cover can not be replaced. For the tweeter plate, M4 hex-nuts can be pressed into the intended cut-outs (3D print with support).
-2 | G50FFL_baffle_v1.scad G20SC_spacer_v2.scad | New baffle/horn design for the G50FFL. 3D print with support. The dome is lowered down to the original dome position of the AD0211. The metal flange of the G50FFL must be removed. The extra gasket, included with the G50FFL package, must be used between the driver and the new baffle/horn. The tweeter has been lowered down too and is mounted with a 2mm spacer ring to leave enough room for extreme woofer excursions. Fixation holes must be drilled through the brackets to mount. Dust covers can be replaced. Slight frequency response problems occur around the mid/high crossover frequency (~5kHz).
+ #1 | G50FFL_spacer_v1.scad G20SC_spacer_v1.scad | Mid driver sticks out above the baffle causing(?) a significant dip in the frequency reponse around 1.8kHz. The tweeter spacer does not need extra fixation holes to be drilled through the brackets. The dust cover can not be put back, because the driver domes are sticking too far outside. M4 hex-nuts can be pressed into the holes intended for mounting the tweeter on top of the spacer ring.  (3D-print with support on).
+ #2 | G50FFL_baffle_v1.scad G20SC_spacer_v2.scad | Attempt two with a new baffle/horn design for the G50FFL. (3D-print with support on). The dome is lowered down to the original dome position of the AD0211. The metal flange of the G50FFL must be removed by removing the four screws at the front side. The extra gasket, included with the G50FFL package, must be used between the driver and the new baffle/horn. The tweeter has been lowered down too and is mounted including a 2mm spacer ring, leaving enough room for extreme woofer excursions. Fixation holes must be drilled through the brackets for mounting. Dust covers can be put back. A minimal dip in the frequency response has been observed around the mid/high crossover frequency (~5kHz).
+ #3 | G50FFL_baffle_v1.scad | The squawker AD0211 is replaced by the G50FFL with the new baffle from attempt #2. The original AD0136 tweeter has been restored.  The mid+high is boosted a few dB's because the Philips AD0163 has a slightly higher efficiency compared to the G20SC and the G50FFL's efficiency is a little higher from the beginning of the mid range frequency band of the 544.
 Bonus | 544_capstand.scad | Capacitor mount, see pictures below. 
 
 ### Capacitor mount
