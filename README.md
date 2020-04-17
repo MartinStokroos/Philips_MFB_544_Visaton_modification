@@ -1,4 +1,4 @@
-# Squawker and Tweeter Driver Modification for the Philips 544 MFB speaker
+# Squawker and Tweeter Modification for the Philips 544 MFB Speaker
 
 This repository contains design information of 3D printable adapter parts to replace the original mid+high drivers from the Philips 22RH544 MFB speaker with Visaton drivers.
 
@@ -15,8 +15,8 @@ The following driver substitutes were selected because of their attractive price
 - The Philips AD0211/Sq8 squawker most often fails and a replacement must be found [3],[4].
 - Overall improvement of the sound quality of the mid+high frequencies. 
 
-This work is pending. A report about the test results and recommendations for modifications of the electronics is under construction. The optimal audio performance has not been reached yet...
-So far attempt #3 is the most promissing. The sound is not unpleasant at all! Modifications in the electronics are not needed. Using a L-pad to attenuate the mid+high range with 1 or 2 dB could be an option. It is a matter of taste. 
+This work is pending. A report about the test results and recommendations for modifications of the electronics will follow. The optimal audio performance has not been reached yet...
+So far attempt #3 is the most promissing. The sound is not unpleasant at all! Modifications in the electronics are not needed from revision 22RH544/50R. Using a L-pad to attenuate the mid+high range with 1 or 2 dB could be an option. It is a matter of taste. 
 
 ## Design for printable parts
 
