@@ -22,8 +22,8 @@ Attempt #3 seems the best compromise. It is the combination of the Visaton G50FF
 The frequency response is as good as the original. Minimal modification of the electronics is needed for the 22RH544/50R. 
 
 ## Design for 3D-printed parts
-Attempt | openSCAD files | Remarks
-------- | -------------- | -------
+Modification Attempt | openSCAD files | Remarks
+-------------------- | -------------- | -------
  #1 | G50FFL_spacer_v1.scad G20SC_spacer_v1.scad | Mid driver sticks out above the baffle causing(?) a worse dip in the frequency reponse around 1.8kHz. The tweeter spacer does not need extra fixation holes to be drilled in the brackets. M4 hex-nuts can be pressed into the holes intended for mounting the tweeter on top of the spacer ring.  (3D-print with support on). The dust covers can not be put back, because the driver domes are sticking too far outside. 
  #2 | G50FFL_baffle_v1.scad G20SC_spacer_v2.scad | Attempt two with a new baffle/horn design for the G50FFL. (3D-print with support on). The dome is placed inwards to the original position of the AD0211 dome. The metal flange of the G50FFL must be removed by removing the four screws from the front side. The extra gasket, included with the G50FFL package, must be used between the driver and the new baffle/horn. The tweeter has been replaced by the G20SC and has been placed deeper inwards too. It is mounted with a 2mm spacer ring, leaving enough room for extreme woofer excursions. Fixation holes must be drilled in the brackets for mounting. The dust covers can be put back on. A small dip in the frequency response has been observed around the mid/high crossover frequency (~5kHz).
  #3 | G50FFL_baffle_v1.scad | The squawker AD0211 has been replaced by the G50FFL with the new baffle/horn design as in attempt #2. The original AD0136 tweeter has been restored.  The midrange frequencies around 1kHz are elevated a few dB's compared to the original. A minor modification in the electronics solves this problem.
@@ -56,16 +56,17 @@ Recommended capacitors:
 * C565 = 680 μF/40V, Panasonic EEU-FR1J681L series, radial 12.5 mm. (Conrad article #1476134)
 
 ## Modification of the electronics
-To approach the original frequency response for attempt #3, the following modifications should be made in the electronics of the 22RH544/50R:
+To approach the original frequency response with modification attempt #3, the following changes should be made in the electronics of the 22RH544/50R:
 
 * The frequency correction network consisting of R730 and C567 from the crossover network, should be disabled by removing R730.
-* An L-pad network consisting of an 1.2 Ohms series resistor and a 47 Ohms parallel resistor should be placed between the crossover filter and the G50FFL driver (S405). This will add 1.5dB attenuation for the midrange. Simulations were performed with Xsim [5].
+* An L-pad network consisting of an 1.2 Ohms series resistor and a 47 Ohms parallel resistor should be placed between the crossover filter and the G50FFL driver (S405). This will add 1.5dB attenuation for the midrange.
 
 | The 544 crossover network. In /50R, C568=3.3μF. |
 | ----------------------------------------------- |
 | ![544 crossover network](figures/544_xover_network.png  "544 crossover network") |
 | ![Xover modification in Xsim](figures/544_Xover_mod.jpg  "Xover modification in Xsim") |
 
+Simulations were performed with Xsim [5].
 
 ## Measurements
 The frequency response measurements were carried out with the Behringer ECM 8000 calibration microphone [6] located at 30cm distance from the center of the speaker. From this distance, the individual response of the drivers already balances out and the influence of the room is minimal.
@@ -76,7 +77,7 @@ The frequency analyzer program that was used is Arta from Artalabs [7].
 | ![Freq. response original 544](figures/FR_544_original.png  "Freq. response original 544") The boost in the high frequency range is remarkable. The reason for this could be the microphone. The factory datasheet of the ECM 8000 shows a somewhat elevated and rippled frequency response between 5kHz and 10kHz. |
 
 | Frequency response attempt #2 | 
-| ----------------------------- |http://libinst.com/
+| ----------------------------- |
 | ![Attempt #2 freq. response](figures/FR_544_overall_Visaton.png  "Attempt #2 freq. response") A dominant frequency dip does appear around 1.8kHz and the G20SC starts rolling off from 9kHz (?) |
  
 | Frequency response attempt #3 | 
