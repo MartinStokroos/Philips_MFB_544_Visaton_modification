@@ -59,22 +59,24 @@ Recommended capacitors:
 To approach the original frequency response for attempt #3, the following modifications should be made in the electronics of the 22RH544/50R:
 
 * The frequency correction network consisting of R730 and C567 from the crossover network, should be disabled by removing R730.
-* An L-pad network consisting of an 1.2 Ohms series resistor and a 47 Ohms parallel resistor should be placed between the crossover filter and the G50FFL driver (S405). This will add 1.5dB attenuation in the midrange.
+* An L-pad network consisting of an 1.2 Ohms series resistor and a 47 Ohms parallel resistor should be placed between the crossover filter and the G50FFL driver (S405). This will add 1.5dB attenuation for the midrange. Simulations were performed with Xsim [5].
 
 | The 544 crossover network. In /50R, C568=3.3μF. |
 | ----------------------------------------------- |
 | ![544 crossover network.](figures/544_xover_network.png  "544 crossover network.") |
+| ![Xover modification in Xsim](figures/544_Xover_mod.jpg  "Xover modification in Xsim") |
+
 
 ## Measurements
-The frequency responce measurements were carried out with the Behringer ECM 8000 calibration microphone [5] located at 30cm distance from the center of the speaker. From this distance, the individual responses of the drivers is already balancing out and the influence of the room stays minimal.
-The frequency analyzer program that was used is Arta from Artalabs [6].
+The frequency responce measurements were carried out with the Behringer ECM 8000 calibration microphone [6] located at 30cm distance from the center of the speaker. From this distance, the individual responses of the drivers is already balancing out and the influence of the room stays minimal.
+The frequency analyzer program that was used is Arta from Artalabs [7].
 
 | Original 544 frequency response | 
 | ------------------------------- |
 | ![Freq. response original 544](figures/FR_544_original.png  "Freq. response original 544") The boost in the high frequency range is remarkable. The reason for this could be the microphone. The factory datasheet of the ECM 8000 shows a somewhat elevated and rippled frequency response between 5kHz and 10kHz. |
 
 | Frequency response attempt #2 | 
-| ----------------------------- |
+| ----------------------------- |http://libinst.com/
 | ![Attempt #2 freq. response](figures/FR_544_overall_Visaton.png  "Attempt #2 freq. response") A dominant frequency dip does appear around 1.8kHz and the G20SC starts rolling off from 9kHz (?) |
  
 | Frequency response attempt #3 | 
@@ -93,6 +95,8 @@ The frequency analyzer program that was used is Arta from Artalabs [6].
  
 [4]: http://www.transistorforum.nl/forum/index.php?mode=thread&id=19335
  
-[5]: https://www.behringer.com/Categories/Behringer/Microphones/Condenser/ECM8000/p/P0118#googtrans(en|en)
+[5]: http://libinst.com/ 
  
-[6]: http://www.artalabs.hr/
+[6]: https://www.behringer.com/Categories/Behringer/Microphones/Condenser/ECM8000/p/P0118#googtrans(en|en)
+ 
+[7]: http://www.artalabs.hr/
