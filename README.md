@@ -68,7 +68,7 @@ To approach the original frequency response for attempt #3, the following modifi
 
 
 ## Measurements
-The frequency responce measurements were carried out with the Behringer ECM 8000 calibration microphone [6] located at 30cm distance from the center of the speaker. From this distance, the individual responses of the drivers is already balancing out and the influence of the room stays minimal.
+The frequency response measurements were carried out with the Behringer ECM 8000 calibration microphone [6] located at 30cm distance from the center of the speaker. From this distance, the individual response of the drivers already balances out and the influence of the room is minimal.
 The frequency analyzer program that was used is Arta from Artalabs [7].
 
 | Original 544 frequency response | 
