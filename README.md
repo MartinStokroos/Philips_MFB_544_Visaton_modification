@@ -18,8 +18,8 @@ Tweeter AD0163/TE8 | Visaton G 20 SC dome tweeter [2]
 - Overall improvement of the sound quality of the midrange and high frequencies.
 
 ## Conclusion
-Attempt #3 seems the best compromise. It is the combination of the Visaton G50FFL soft dome midrange driver with the new baffle/horn design and the original Philips AD0163 tweeter. The provided solution solves the problem of a faulty AD0211.
-The frequency response is as good as the original. Minimal modification of the electronics is needed for the 22RH544/50R. 
+Attempt #3 seems the best compromise. It is the combination of the Visaton G50FFL soft dome midrange driver with the new baffle/horn design and the original Philips AD0163 tweeter. The provided solution solves the problem for a broken AD0211.
+The frequency response is very close to the original. Minimal modifications of the electronics is needed in the 22RH544/50R. 
 
 ## Design for 3D-printed parts
 Modification Attempt | openSCAD files | Remarks
