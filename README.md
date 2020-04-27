@@ -63,7 +63,7 @@ To approach the original frequency response for attempt #3, the following modifi
 
 | The 544 crossover network. In /50R, C568=3.3μF. |
 | ----------------------------------------------- |
-| ![544 crossover network.](figures/544_xover_network.png  "544 crossover network.") |
+| ![544 crossover network](figures/544_xover_network.png  "544 crossover network") |
 | ![Xover modification in Xsim](figures/544_Xover_mod.jpg  "Xover modification in Xsim") |
 
 
