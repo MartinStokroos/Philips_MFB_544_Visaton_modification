@@ -1,6 +1,6 @@
 # Squawker and Tweeter Modification for the Philips 544 MFB Speaker
 
-This repository contains design information of 3D printable adapter parts to replace the original midrange and high frequency driver from the Philips 22RH544 MFB speaker with Visaton drivers. Feel free to fork this project and inprove this modification proposal.
+This repository contains design information of 3D printable adapter parts to replace the original midrange and high frequency driver from the Philips 22RH544 MFB speaker with Visaton drivers. Feel free to fork this project to improve this modification proposal.
 
 ORIGINAL 544 | MODIFIED 544 | BEST COMPROMISE
 ------------ | ------------ | ---------------
@@ -18,8 +18,8 @@ Tweeter AD0163/TE8 | Visaton G 20 SC dome tweeter [2]
 - Overall improvement of the sound quality of the midrange and high frequencies.
 
 ## Conclusion
-Attempt #3 seems the best compromise. It is the combination of the Visaton G50FFL soft dome midrange driver with the new baffle/horn design and with the original Philips AD0163 tweeter. It solves the problem of a faulty AD0211.
-The frequency response is as good as the original. Minimal  modification of the electronics is needed for the 22RH544/50R. 
+Attempt #3 seems the best compromise. It is the combination of the Visaton G50FFL soft dome midrange driver with the new baffle/horn design and the original Philips AD0163 tweeter. The provided solution solves the problem of a faulty AD0211.
+The frequency response is as good as the original. Minimal modification of the electronics is needed for the 22RH544/50R. 
 
 ## Design for 3D-printed parts
 Attempt | openSCAD files | Remarks
