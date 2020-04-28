@@ -33,15 +33,15 @@ Bonus | 544_capstand.scad | Capacitor mount, see pictures below.
 
 ## Assembly
 ### G50FFL baffle
-Push the washers (M4) into the holes | Remove the flange from the Visaton G50FFL carefully
+Push the washers (M4) into the holes. | Remove the flange from the Visaton G50FFL carefully.
 ------------------------------------ | ---------------------------------------------------
 ![assy step 1](figures/G50FFL_baffle_assy1.jpg  "assy step 1") | ![assy step 2](figures/G50FFL_baffle_assy2.jpg  "assy step 2") | ![assy step 3](figures/G50FFL_baffle_assy3.jpg  "assy step 3")
 
-Place the spare gasket | Mount the baffle and cutaway the redundant gasket material
+Place the spare gasket. | Mount the baffle and cutaway the redundant gasket material. Use M4*10mm screws with cylinder head.
 ---------------------- | ----------------------------------------------------------
 ![assy step 3](figures/G50FFL_baffle_assy3.jpg  "assy step 3") | ![assy step 4](figures/G50FFL_baffle_assy4.jpg  "assy step 4")
 
-| Mount the completed driver assembly | 
+| Mount the completed driver assembly. | 
 | ----------------------------------- |
 | ![assy step 5](figures/G50FFL_baffle_assy5.jpg  "assy step 5") |
 
