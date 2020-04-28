@@ -1,5 +1,5 @@
-// Quick-and-dirty design sketch for a new plastic baffle for the Visaton G50FFL, which meets the formfactor of the AD0211 Squawker.
-// Revision 1.1
+// Quick-and-dirty design sketch for a new plastic baffle for the Visaton G50FFL, which meets the form-factor of the AD0211 Squawker.
+// Revision 1.2
 
 do = 134.0; // diameter AD0211
 di = 110; //cutout cabinet
@@ -14,9 +14,9 @@ d_head1 = 7.1;
 d_dome_bot = 66.67;
 d_dome_top = 54.0; //53.0 in rev. 1.0
 d_screw2 = 4.8;
-d_head2 = 9.2; //7.6 with rev. 1.0, now larger for using washer.
+d_head2 = 9.4; // Rev. 1.2, better fit for washer.
 
-h_dome = 3.9; //3.8 with rev. 1.0, space between suspension and rim.
+h_dome = 3.9; //rev. 1.0, space between suspension and rim changed from 3.8 to 3.9.
 r_sphere = 123; //122 with rev. 1.0
 sphere_offs = r_sphere-10.0;
 
@@ -42,14 +42,14 @@ difference() {
     translate([0, 0, -10+depth+h_dome]) cylinder(d=d_dome_bot, h=10, center=false,$fn=200);
     translate([0, 0, sphere_offs]) sphere(r_sphere, $fn=300);
     
-    //G 50 FFL holes
+    //G50FFL holes
     translate([40, 0, 0]) cylinder(d=d_screw2, h=30.0, center=true,$fn=200);
     translate([0, 40, 0]) cylinder(d=d_screw2, h=30.0, center=true,$fn=200);
     translate([-40, 0, 0]) cylinder(d=d_screw2, h=30.0, center=true,$fn=200);
     translate([0, -40, 0]) cylinder(d=d_screw2, h=30.0, center=true,$fn=200);
     
-    translate([40, 0, depth+2.8]) cylinder(d=d_head2, h=30.0, center=false,$fn=200);
-    translate([0, 40, depth+2.8]) cylinder(d=d_head2, h=30.0, center=false,$fn=200);
-    translate([-40, 0, depth+2.8]) cylinder(d=d_head2, h=30.0, center=false,$fn=200);
-    translate([0, -40, depth+2.8]) cylinder(d=d_head2, h=30.0, center=false,$fn=200);
+    translate([40, 0, depth+3.0]) cylinder(d=d_head2, h=30.0, center=false,$fn=200); // rev. 1.2, changed depth offset from 2.8 to 3.0
+    translate([0, 40, depth+3.0]) cylinder(d=d_head2, h=30.0, center=false,$fn=200);
+    translate([-40, 0, depth+3.0]) cylinder(d=d_head2, h=30.0, center=false,$fn=200);
+    translate([0, -40, depth+3.0]) cylinder(d=d_head2, h=30.0, center=false,$fn=200);
 }
